@@ -65,19 +65,19 @@ int main() {
       //we only print if it is not visited
 
       if (visited[top]==false)
-	{
-	  visited[top] = true;
-	  cout << top << " ";
-	}
+	    {
+	      visited[top] = true;
+	      cout << top << " ";
+	    }
 
       //for all the adjacent vertices of top, if it is
       //not visited, then push it into stack
       for (int i = 0; i < adj_list[top].size(); i++)
-	{
-	  int node = adj_list[top][i];
-	  if (visited[node]==false)
-	    s.push(node);
-	}
+	    {
+	      int node = adj_list[top][i];
+	      if (visited[node]==false)
+	      s.push(node);
+	    }
     }
 
   cout << endl;
